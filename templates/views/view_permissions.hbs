@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Keysue</title>
+	</head>
+	<body>
+		<p>{{username}}</p>
+		<a href="/logout">Logout</a>
+		<a href="/passwords">View Passwords</a>
+
+		<p>Existing permissions:</p>
+		<table>
+			<thead>
+				<tr>
+					<th>Permission</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody id="permission_tbody"></tbody>
+		</table>
+
+		<form id="permission_form">
+			<input placeholder="Permission name" type="text" id="name" name="permission_name">
+			<input placeholder="Description" type="text" id="desc" name="description">
+			<button type="submit">Submit</button>
+		</form>
+
+		<script src="/js/permission.js"></script>
+	</body>
+</html>
